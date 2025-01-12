@@ -1,0 +1,377 @@
+
+.class {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: rgb(129, 116, 116);
+        color: #333
+        
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B22222;
+    padding: 20px;
+    color: white;
+    position:sticky;
+    top:0;
+    z-index: 1000;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+header .logo h1 {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    margin-right: 40px;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+header nav ul li a:hover {
+    text-decoration: underline;
+
+}
+.search-bar input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+}
+.search-bar input:focus {
+    outline: none;
+}
+
+.hero {
+    background-image: url('https://media-cdn.sygictraveldata.com/media/800x600/612664395a40232133447d33247d3835373734373335');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#f4f4f4;
+    text-align: center;
+}
+.hero .hero-content h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+.hero .hero-content p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+main {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.info-section {
+    text-align: center;
+    padding: 50px 0;
+
+}
+
+.info-section h2 {
+    font-size: 2rem;
+    color: #00274d;
+}
+
+.info-section p {
+    font-size: 25px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+}
+.education-department {
+    padding: 20px;
+    text-align: center;
+}
+
+.education-department h2 {
+    font-size: 2rem;
+    color: #00274d;
+}
+figure {
+    margin: 20px;
+    text-align: center;
+}
+.department-image {
+    width: 60%; 
+    max-width: 800px; 
+    border-radius: 10px; 
+}
+figcaption {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+.admissions {
+    padding: 20px;
+    text-align: center;
+}
+
+.admissions h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #00274d;
+}
+.admissions p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.admissions h3 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+figure {
+    margin: 20px;
+    text-align: center;
+}
+.admissions-image {
+    width: 60%;
+    max-width: 800px;
+    border-radius: 10px; /
+}
+
+figcaption {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+.campus-life {
+    padding: 50px 20px;
+    background-color: #f4f4f4; 
+    font-family: Arial, sans-serif;
+}
+.campus-life-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.campus-life-intro h2 {
+    font-size: 2rem;
+    color: #00274d;
+    margin-bottom: 10px;
+}
+
+.campus-life-intro p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+.campus-life-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.4rem;
+    color: #00274d; /* Stanford Blue */
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+    .campus-life-intro h2 {
+        font-size: 1.8rem;
+    }
+
+    .campus-life-intro p {
+        font-size: 1rem;
+    }
+
+    .card {
+        max-width: 90%;
+    }
+}
+
+.contact-section {
+    padding: 50px 0;
+    background-color:#f4f4f4; 
+    font-family: Arial, sans-serif;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.contact-info {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.contact-info h2 {
+    font-size: 2rem;
+    color: #00274d; /* Stanford Blue */
+    margin-bottom: 15px;
+}
+.contact-info p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+.contact-info ul li {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.contact-form {
+    flex: 2;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: #00274d; /* Stanford Blue */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.contact-form button:hover {
+    background-color: #005A91;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+}
+footer p {
+    font-size: 14px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.social-media a:hover {
+    color: #007bff; 
+}
+.social-media i {
+    margin-right: 5px; 
+}
+
+@media (max-width: 768px) {
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media a {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+}
+
